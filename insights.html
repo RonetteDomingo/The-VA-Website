@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>S-Class Insights</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header container">
+<img src="logo.png" alt="Logo" class="logo"/>
+</header>
+<main class="container">
+<h1>S-Class Insights</h1>
+
+<article class="post">
+<h2>5 Tools Every Virtual Assistant Should Use</h2>
+<p class="date">2025-08-01 | Productivity</p>
+<p class="excerpt">Discover the top tools that will help you stay efficient...</p>
+<a href="#post1" onclick="togglePost('post1', this); return false;" class="read-more">Read More</a>
+<div id="post1" style="display:none; margin-top:10px;">
+<p>Full post content here...</p>
+</div>
+</article>
+
+<!-- Add more article blocks here -->
+
+</main>
+<script>
+function togglePost(id, link){
+  const el = document.getElementById(id);
+  const isHidden = window.getComputedStyle(el).display === 'none';
+  if(isHidden){ el.style.display='block'; if(link) link.textContent='Read Less'; }
+  else { el.style.display='none'; if(link) link.textContent='Read More'; }
+}
+</script>
+</body>
+</html>
