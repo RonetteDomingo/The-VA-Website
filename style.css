@@ -1,0 +1,42 @@
+:root{
+  --white: #ffffff;
+  --gold: #C1914D;
+  --bronze: #A16A27;
+  --deep-brown: #78420B;
+  --dark: #120B08;
+  --max-width: 1100px;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:var(--dark);
+  color:var(--white);
+  line-height:1.6;
+}
+.container{
+  width:90%;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:20px 0;
+}
+.site-header{background:var(--deep-brown); padding:18px 0;}
+.site-header .logo{height:48px; vertical-align:middle;}
+.site-header .brand{display:inline-block; margin-left:10px; color:var(--gold); font-size:1.4rem; vertical-align:middle;}
+.main-nav{margin-top:8px;}
+.main-nav a{color:var(--white); text-decoration:none; margin:0 10px; font-weight:bold;}
+.hero{background:linear-gradient(180deg, rgba(0,0,0,0.15), rgba(0,0,0,0)); padding:60px 0; text-align:center;}
+.btn-primary{background:var(--gold); color:var(--dark); padding:10px 18px; text-decoration:none; border-radius:6px; font-weight:bold; display:inline-block; margin-top:10px;}
+.about{display:flex; flex-wrap:wrap; gap:20px; align-items:center; padding:40px 0;}
+.profile{max-width:220px; border-radius:50%; border:5px solid var(--gold);}
+.card{display:inline-block; background:var(--bronze); color:var(--white); padding:14px 18px; text-decoration:none; border-radius:8px; margin:8px;}
+.site-footer{background:var(--dark); padding:20px 0; text-align:center; border-top:1px solid rgba(255,255,255,0.04);}
+
+/* Responsive */
+@media (max-width:700px){
+  .about{flex-direction:column;}
+  .site-header .brand{display:block; margin-top:8px;}
+}
+
+
